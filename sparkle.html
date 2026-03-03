@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sparkle Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Quicksand', sans-serif;
+background:linear-gradient(-45deg,#f5f0ff,#fdf0ff,#f9f4ff,#f3e8ff);
+background-size:400% 400%;
+animation:flowBg 18s ease infinite;
+color:#444;
+}
+
+@keyframes flowBg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.navbar{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(10px);
+padding:18px;
+text-align:center;
+}
+
+.navbar a{
+margin:0 25px;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1.5px;
+color:#be9cff;
+}
+
+h1{
+font-family:'Playfair Display', serif;
+text-align:center;
+margin-top:60px;
+letter-spacing:3px;
+color:#8e6ccf;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:60px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#b59ce4;
+padding:20px;
+border-radius:20px;
+width:260px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+button{
+margin-top:12px;
+padding:8px 20px;
+border:none;
+border-radius:25px;
+background:#8e6ccf;
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#6f4fb5;
+transform:scale(1.07);
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<a href="index.html">HOME</a>
+<a href="blush.html">BLUSH</a>
+<a href="bloom.html">BLOOM</a>
+<a href="sparkle.html">SPARKLE</a>
+</div>
+
+<h1>Sparkle Collection</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="princess jewellery.jpg">
+<h3>Shine Necklace</h3>
+<p>₹1199</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="candle.jpg">
+<h3>Moonlit Scented Candle</h3>
+<p>₹899</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="perfume.jpg">
+<h3>BBS Perfume</h3>
+<p>₹1049</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</body>
+</html>
